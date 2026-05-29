@@ -1,7 +1,15 @@
-#this is a conditionals script
-bananas = int(input("Enter the number of bananas you have: "))
-if bananas > 5:
-    print("I have a lot of bananas!")
-elif bananas < 5:
-    print("I don't have enough bananas.")
-
+userReply = input("Do you need to ship a package, my lord Xue? (Enter yes or no) ")
+if userReply == "yes":
+    print("We can help you ship that package! my lord!")
+else:
+    print("Please come back when you need to ship a package. Thank you, my lord.")
+userReply = input("Would you like to buy stamps, buy an envelope, or make a copy? (Enter stamps, envelope, or copy) ")
+if userReply == "stamps":
+    print("We have many stamp designs to choose from.")
+elif userReply == "envelope":
+    print("We have many envelope sizes to choose from.")
+elif userReply == "copy":
+    copies = input("How many copies would you like? (Enter a number) ")
+    print("Here are {} copies.".format(copies))
+else:
+    print("Thank you, please come again.")
